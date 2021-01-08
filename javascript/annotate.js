@@ -53,10 +53,9 @@ function handleMouseUp(e) {
   canvas2.style.cursor = "default";
   isDrawing = false;
   if(boundingDelete){
-    console.log("rea2");
     boundingBoxes.splice(boundingId, 1);
     boundingButton.splice(boundingId, 1);
-    console.log(boundingButton);
+    //console.log(boundingButton);
     boundingDelete = false;
     // draw();
     showdelete();
@@ -96,8 +95,8 @@ function handleMouseUp(e) {
         
         box.printCoordinates();
         button.printCoordinates();
-        console.log(boundingBoxes);
-        console.log(boundingButton);
+        //console.log(boundingBoxes);
+        //console.log(boundingButton);
         drawed = false;
       }
     }else{
@@ -181,7 +180,7 @@ function resetcanvas(){
     context2.clearRect(0, 0, canvas2.width, canvas2.height);
     boundingBoxes.length = 0;
     boundingButton.length = 0;
-    console.log(boundingBoxes); // ok
+    //console.log(boundingBoxes); // ok
 }
 
 function drawRect(o){
