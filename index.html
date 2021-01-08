@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Annotations</title>
+</head>
+
+<body>
+
+  Import Image: <input type="file" id="fileUpload" name="fileUpload" multiple/>
+
+  <p>
+    <div id="buttons1">
+      <button id="reset" onclick="resetcanvas()">Reset Annotations</button> &nbsp
+      <button id="save" onclick="savecanvas()"><span>Export Annotations</span></button>
+      <div id="canvases" align="middle" style="position:relative; width:1100; height:700px; overflow: scroll; ">
+        <canvas id="canvas" align="middle" style="z-index: 0; position: absolute; left: 125px; top: 0px; "></canvas>
+        <canvas id="canvas2" align="middle" style="z-index: -1; position: absolute; left: 125px; top: 0px; "></canvas>
+      </div>
+      <p></p>
+      <br>
+      <span></span>
+    </div>
+    <p></p>
+    <div id="button">
+    </div>
+</p>
+</body>
+<script src="javascript/reader.js"></script>
+<script src="javascript/annotate.js"></script>
+
+<!-- <script src="javascript/clear.js"></script> -->
