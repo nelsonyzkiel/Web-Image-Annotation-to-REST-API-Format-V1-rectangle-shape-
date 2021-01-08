@@ -9,4 +9,4 @@ How to use it?
 2. Add your annotation by click & drag it on your uploaded image.
 3. You can see your annotation with REST API Format by clicking the "Export Annotations" button.
 
-Use this to create Machine Learning dataset. (YOLO, etc)
+Use this to create Machine Learning dataset. (YOLO, R-CNN, etc)
