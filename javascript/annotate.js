@@ -69,9 +69,9 @@ function handleMouseUp(e) {
         const button = Object.create(annotation);
         if(o.w<0){ 
           box.id = boundingButton.length
-          box.x = o.x + Math.abs(o.w);
+          box.x = o.x;
           box.y = o.y;
-          box.w = Math.abs(o.w);
+          box.w = o.w;
           box.h = Math.abs(o.h);
           button.id = boundingButton.length
           button.x = oButton.x;
@@ -111,22 +111,28 @@ function handleMouseUp(e) {
 function draw() {
     if((m.x-start.x)<0){
       o.id = boundingButton.length;
-      o.x = start.x;  // start position of x
+      o.x = start.x-o.w;  // start position of x
       o.y = start.y;  // start position of y
-      o.w = Math.abs(m.x-start.x);  // width
+      o.w = Math.abs(m.x - start.x);  // width
       o.h = Math.abs(m.y-start.y);  // height
+      oButton.id = boundingButton.length;
+      oButton.x = start.x;  // start position of x
+      oButton.y = start.y;  // start position of y
+      oButton.w = 20;  // width
+      oButton.h = 20;  // height
     }else{
       o.id = boundingButton.length;
       o.x = start.x;  // start position of x
       o.y = start.y;  // start position of y
       o.w = m.x - start.x;  // width
       o.h = Math.abs(m.y-start.y);  // height
+      oButton.id = boundingButton.length;
+      oButton.x = start.x+o.w;  // start position of x
+      oButton.y = start.y;  // start position of y
+      oButton.w = 20;  // width
+      oButton.h = 20;  // height
     }
-    oButton.id = boundingButton.length;
-    oButton.x = start.x+o.w;  // start position of x
-    oButton.y = start.y;  // start position of y
-    oButton.w = 20;  // width
-    oButton.h = 20;  // height
+    
     //clearcanvas();
     context2.clearRect(0, 0, canvas2.width, canvas2.height);//////***********
     // draw all the rectangles saved in the rectsRy
