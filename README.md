@@ -1,5 +1,5 @@
 # Web-Image-Annotation-to-REST-API-Format-V1-rectangle-shape-
-You can annotate your image using this website (REST API Format). Just upload your image file and annotate everything what do you want. :D
+You can annotate your image using this website (REST API Format). Just upload your image file and annotate everything as much as you can. :D
 
 This code doesn't include the back-end. You can add your favorite back-end framework to complete everything.
 
